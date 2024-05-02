@@ -43,7 +43,7 @@ def getArtificatId = { ->
 
 publishing {
     publications {
-        bar(MavenPublication) {
+        aar(MavenPublication) {
             groupId 'com.jmc.core'
             artifactId getArtificatId()
             version getVersionName()
