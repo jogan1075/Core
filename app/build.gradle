@@ -1,6 +1,5 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 
 /**Create github.properties in root project folder file with gpr.usr=GITHUB_USER_ID  & gpr.key=PERSONAL_ACCESS_TOKEN**/
 def githubPropertiesFile = rootProject.file("github.properties");
@@ -9,13 +8,11 @@ githubProperties.load(new FileInputStream(githubPropertiesFile))
 
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.3"
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.jmc.core"
-        minSdkVersion 21
-        targetSdkVersion 29
+        minSdkVersion 23
         versionCode 1
         versionName "1.0"
 
