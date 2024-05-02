@@ -38,7 +38,7 @@ def getVersionName = { ->
 }
 
 def getArtificatId = { ->
-    return "core-utils" // Replace with library name ID
+    return "core" // Replace with library name ID
 }
 
 publishing {
